@@ -20,7 +20,7 @@ describe('UserController', () => {
     expect(response).toBe('Hello Eko Khannedy');
   });
 
-  it('should can view template', async () => {
+  it('should can view template', () => {
     const response = httpMock.createResponse();
     controller.viewHello('Eko', response);
 
