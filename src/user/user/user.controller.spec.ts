@@ -12,6 +12,7 @@ import {
   createUserRepository,
   UserRepository,
 } from '../user-repository/user-repository';
+import { MemberService } from '../member/member.service';
 
 describe('UserController', () => {
   let controller: UserController;
@@ -22,6 +23,7 @@ describe('UserController', () => {
       imports: [],
       providers: [
         UserService,
+        MemberService,
         {
           provide: Connection,
           useClass:
